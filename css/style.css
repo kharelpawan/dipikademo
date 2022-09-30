@@ -318,7 +318,7 @@ body {
     padding: 10px;
     margin-left: 40px;
   }
-  
+
 }
 
 
@@ -473,19 +473,21 @@ form .button {
 .achievements h1 {
   margin: 20px 0px 0px 120px;
 }
+
 @media (max-width: 1200px) {
   .aboutme {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .aboutleft,
-    .aboutright {
-      width: 100%;
-      float: none;
-    }
-  
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .aboutleft,
+  .aboutright {
+    width: 100%;
+    float: none;
+  }
+
 }
+
 .card {
   margin: 74px 90px 0px 80px;
   float: center;
@@ -686,17 +688,18 @@ td {
 @media (max-width: 1200px) {
   .clearfix {
     flex-direction: column;
-      width: 100%;
+    width: 100%;
   }
 
   .itemleft,
   .itemright {
     width: 100%;
     float: none;
-    margin:10px 20px 2px 2px;
+    margin: 10px 20px 2px 2px;
   }
 
 }
+
 .visionimg {
   margin: 40px;
   width: 50%;
