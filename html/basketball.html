@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/gallery.css" rel="stylesheet">
+<script src="../scripts/gallery.js"></script>
+
+<body>
+    <div>
+        <!-- <header class="menu">
+              <div class="topmenu">
+                  <img src="../images/ccr.jpg" class="logo">
+                  <h1 class="name">Dipika Pradhan</h1>
+                  <input type="search" name="" id="search">
+              </div>
+              <div class="bottommenu">
+                  
+                <nav>
+                    <ul class="horizontal">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="background.html">Background</a>
+                        <ul>
+                            <li><a href="background.html">About Me</a></li>
+                            <li><a href="background.html">Goals</a></li>
+                            
+                        </ul></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="personal.html">Gallery</a>
+                        <ul>
+                            <li><a href="personal.html">Personal</a></li>
+                            <li><a href="basketball.html">BasketBall</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="events.html">Events</a>
+                            <ul>
+                                <li><a href="events.html">International</a></li>
+                                <li><a href="events.html">National</a></li>
+                                <li><a href="events.html">Local</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="requirements.html">Requirements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header> -->
+            <!-- Header -->
+    <div class="header">
+        <img src="../images/ccr.jpg" class="logo" />
+        <h1 class="name">Dipika Pradhan</h1>
+        <input type="search" name="" id="search" />
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul class="horizontal">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="background.html">Background</a>
+                <ul>
+                    <li><a href="background.html">About Me</a></li>
+                    <li><a href="background.html">Goals</a></li>
+                </ul>
+            </li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li>
+                <a href="personal.html">Gallery</a>
+                <ul>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="basketball.html">BasketBall</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="events.html">Events</a>
+                <ul>
+                    <li><a href="events.html">International</a></li>
+                    <li><a href="events.html">National</a></li>
+                    <li><a href="events.html">Local</a></li>
+                </ul>
+            </li>
+            <li><a href="requirements.html">Requirements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+        <div class="row">
+            <h1 style="text-align: center;"> eSports Gallery</h1>
+            <div class="column">
+                <img src="../images/esports1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="../images/esports2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="../images/esports3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="../images/esports4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow cursor">
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../images/esports1.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../images/esports2.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../images/esports3.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../images/esports4.jpeg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                    <img class="demo cursor" src="../images/esports1.jpeg" style="width:100%;" onclick="currentSlide(1)"
+                        alt="eSports1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../images/esports2.jpeg" style="width:100%" onclick="currentSlide(2)"
+                        alt="eSports2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../images/esports3.jpeg" style="width:100%" onclick="currentSlide(3)"
+                        alt="esports3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../images/esports4.jpeg" style="width:100%" onclick="currentSlide(4)"
+                        alt="esports4">
+                </div>
+            </div>
+
+</body>
+
+</html>
