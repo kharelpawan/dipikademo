@@ -4,8 +4,6 @@
   text-decoration: none;
   box-sizing: border-box;
 }
-
-/* additional css */
 /* Style the body */
 body {
   font-family: Arial;
@@ -17,7 +15,7 @@ body {
   display: flex;
   padding: 10px;
   text-align: center;
-  background: #1abc9c;
+  background: rgb(51, 255, 255);
   color: white;
 }
 
@@ -57,14 +55,7 @@ body {
 /* Main column */
 .main {
   flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
+  background-color: #C0C0C0;
   padding: 20px;
 }
 
@@ -72,7 +63,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: rgb(51, 204, 255);
 }
 
 .para {
@@ -93,7 +84,7 @@ body {
   }
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 700px wide,*/
 
 @media screen and (max-width: 700px) {
 
@@ -107,23 +98,6 @@ body {
   }
 }
 
-/* other css */
-body {
-  /* height: 100vh; */
-  margin: 0;
-}
-
-.menu {
-  width: 100vw;
-  height: 32vh;
-  background-color: rgba(51, 255, 255);
-}
-
-.topmenu {
-  width: 100%;
-  height: 150px;
-}
-
 .name {
   position: absolute;
   top: 20px;
@@ -132,6 +106,7 @@ body {
   background: #ffffff;
   color: #000;
   border: 2px solid #000;
+  font-family: serif;
 }
 
 #search {
@@ -143,31 +118,19 @@ body {
 }
 
 .logo {
-  /* display: block;
-  position: relative;
-  top: 20px; */
   width: 120px;
   height: 120px;
   margin: auto;
 }
 
-.bottommenu {
-  width: 100%;
-  height: 50px;
-  float: left;
-}
 
 .horizontal {
   display: flex;
   list-style-type: none;
-  /* margin-left: 10vw;
-  padding: 0;
-  overflow: hidden; */
 }
 
 .horizontal>li {
   float: left;
-  /* border: 1px solid black; */
   margin-right: 10px;
   width: auto;
 }
@@ -201,7 +164,6 @@ body {
 }
 
 .horizontal li a:hover {
-  /* background-color: #680000; */
   color: #a2becf;
 }
 
@@ -234,8 +196,6 @@ body {
 }
 
 .leftcontent {
-  /* height: 58vh; */
-  /* width: 60%; */
   flex: 60%;
   float: left;
   display: flex;
@@ -256,8 +216,6 @@ body {
 }
 
 .rightcontent {
-  /* height: 58vh; */
-  /* width: 40%; */
   flex: 40%;
   float: right;
 }
@@ -275,7 +233,7 @@ body {
   padding: 8px;
   float: left;
   margin: 5px;
-  margin-left: 80px;
+  /* margin-left: 20px; */
   background-color: #ffffff;
   border: 1px solid black;
 }
@@ -321,23 +279,7 @@ body {
 
 }
 
-
-#footer {
-  height: 5vh;
-  width: 100%;
-  background-color: rgba(51, 255, 255);
-}
-
-#footer p {
-  text-align: center;
-  color: #161712;
-  float: left;
-  margin-left: 400px;
-  margin-top: 6px;
-  background-color: #ffffff;
-}
-
-#footer .fa {
+.footer .fa {
   float: right;
   padding: 8px;
   font-size: 14px;
@@ -349,7 +291,7 @@ body {
 .fa:hover {
   opacity: 0.7;
   background-color: crimson;
-}
+} 
 
 /*form*/
 form,
@@ -396,7 +338,7 @@ form label p {
   color: #262626;
   font-size: 12px;
   float: left;
-  width: 100px;
+  width: 120px;
   text-align: left;
   padding: 5px 10px 0 0;
 }
@@ -587,42 +529,6 @@ td {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-#indoor {
-  visibility: hidden;
-  float: right;
-  padding: 0px 12px;
-  width: 60%;
-  height: 180px;
-  margin: 80px 0px 0px 0px;
-}
-
-#outdoor {
-  position: absolute;
-  visibility: hidden;
-  float: right;
-  padding: 0px 12px;
-  width: 60%;
-  height: 180px;
-  margin: 180px 0px 0px 413px;
-}
-
-#australia {
-  background-image: url(/img/aus.jpg);
-  background-size: 100% 170%;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#nepal {
-  background-image: url(/img/nep.jpg);
-  background-size: 100% 170%;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .education {
   overflow: auto;
 }
@@ -645,14 +551,16 @@ td {
 }
 
 .clearfix {
-  /* text-align: center;
-  height: 63vh;
-  width: 100%;
-  overflow: auto; */
   display: flex;
   flex-wrap: wrap;
 }
-
+.clearfix h1{
+  text-align: center;
+}
+.clearfix-item{
+  margin-left: 40px;
+  padding: 20px;
+}
 .clearfix-items {
   overflow: auto;
   border: 1px solid black;
@@ -660,6 +568,7 @@ td {
 
 .clearfix-items h1 {
   margin: 12px;
+ 
 }
 
 .clearfix-items p {
@@ -669,22 +578,6 @@ td {
 .clearfix-item {
   border: 1px solid red;
 }
-
-/* .clearfix-item1 {
-  width: 30%;
-  float: left;
-}
-
-.clearfix-item2 {
-  width: 38%;
-  display: inline-block;
-  background-color: #04aa6d;
-}
-
-.clearfix-item3 {
-  width: 30%;
-  float: right;
-} */
 @media (max-width: 1200px) {
   .clearfix {
     flex-direction: column;
@@ -697,13 +590,18 @@ td {
     float: none;
     margin: 10px 20px 2px 2px;
   }
+    .clearfix-item {
+      margin: 10px;
+      padding: 20px;
+    }
 
 }
 
 .visionimg {
-  margin: 40px;
-  width: 50%;
-  height: 180px;
+  margin: 20px;
+  margin-left: 80px;
+  width: 80%;
+  height: 200px;
 }
 
 .btn-group button {
@@ -731,8 +629,4 @@ td {
 /* Add a background color on hover */
 .btn-group button:hover {
   background-color: #3e8e41;
-}
-
-.myform {
-  background-color: red;
 }
